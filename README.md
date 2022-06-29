@@ -5,26 +5,26 @@
 # Table of Contents
 
 - [1. Performance](#1-performance)
-  * [1.1. Top1/5 results on CUB-200-2011](#11-top1-5-results-on-cub-200-2011)
+  * [1.1. Top1/5 results on CUB-200-2011](#11-top1-5-results-on-cub-200-2011) **[✓]**
     + [Transformer](#transformer)
     + [VGG](#vgg)
     + [InceptionV3](#inceptionv3)
     + [Others](#others)
-  * [1.2. Top1/5 results on ImageNet](#12-top1-5-results-on-imagenet)
+  * [1.2. Top1/5 results on ImageNet](#12-top1-5-results-on-imagenet) **[✓]**
     + [Transformer](#transformer-1)
     + [VGG](#vgg-1)
     + [InceptionV3](#inceptionv3-1)
     + [Others](#others-1)
-  * [1.3. MaxBoxAccV2 results on CUB-200-2011](#13-maxboxaccv2-results-on-cub-200-2011)
-  * [1.4. MaxBoxAccV2 results on ImageNet](#14-maxboxaccv2-results-on-imagenet)
-- [2. Paper List](#2-paper-list)
-  * [2022](#2022)
-  * [2021](#2021)
-  * [2020](#2020)
-  * [2019](#2019)
-  * [2018](#2018)
-  * [2017](#2017)
-  * [2016](#2016)
+  * [1.3. MaxBoxAccV2 results on CUB-200-2011](#13-maxboxaccv2-results-on-cub-200-2011) **[x]**
+  * [1.4. MaxBoxAccV2 results on ImageNet](#14-maxboxaccv2-results-on-imagenet) **[x]**
+- [2. Paper List](#2-paper-list) 
+  * [2022](#2022) **[x]**
+  * [2021](#2021) **[x]**
+  * [2020](#2020) **[x]**
+  * [2019](#2019) **[✓]**
+  * [2018](#2018) **[✓]**
+  * [2017](#2017) **[✓]**
+  * [2016](#2016) **[✓]**
 - [3. Dataset](#3-dataset)
   * [CUB-200-2011](#cub-200-2011)
   * [ImageNet](#imagenet)
@@ -61,7 +61,10 @@
 |:------ |:--------:|:-----:|:-----:|:-----------:|:--------:|:-----------:|
 | CREAM  | 2022CVPR | VGG16 | -     | 70.4/85.7   | 91.0     |             |
 | PSOL   | 2020CVPR | VGG16 | VGG16 | 66.3/84.1   | -        | -/-         |
+| MEIL   | 2020CVPR | VGG16 | -     | 57.5/-      | 73.8     | 74.8/-      |
 | DANet  | 2019ICCV | VGG16 | -     | 52.5/62.0   | 67.7     | 75.4/92.3   |
+| CutMix | 2019ICCV | VGG16 | -     | 52.5/-      | -        | -           |
+| ADL    | 2019CVPR | VGG16 | -     | 52.4/-      | 75.4     | 65.3/-      |
 | CAM    | 2016CVPR | VGG16 | -     | 44.2/52.2   | 56.0     | 76.6/92.5   |
 | SPG    | 2018ECCV | VGG16 | -     | 48.9/57.9   | 58.9     | 75.5/92.1   |
 
@@ -72,6 +75,7 @@
 | CREAM  | 2022CVPR | InceptionV3 | -           | 71.8/86.4   | 90.4     | -/-         |
 | PSOL   | 2020CVPR | InceptionV3 | InceptionV3 | 65.5/83.4   | -        | -/-         |
 | DANet  | 2019ICCV | InceptionV3 | -           | 49.5/60.5   | 67.0     | 71.2/90.6   |
+| ADL    | 2019CVPR | InceptionV3 | -           | 53.0/-      | -        | 74.6/-      |
 | SPG    | 2018ECCV | InceptionV3 | -           | 46.6/57.7   | -        | -           |
 
 ### Others
@@ -80,6 +84,7 @@
 |:------- |:--------:|:-------------:|:-----:|:-----------:|:--------:|:-----------:|
 |         |          | **ResNet50**  |       |             |          |             |
 | DA-WSOL | 2022CVPR | ResNet50      | -     | 66.8/-      | 82.3     | -/-         |
+| CutMix  | 2019ICCV | ResNet50      | -     | 54.81/-     | -        | -/-         |
 |         |          | **GoogleNet** |       |             |          |             |
 | CAM     | 2016CVPR | GoogleNet     | -     | 41.1/50.7   | -        | 73.8/91.5   |
 
@@ -98,6 +103,8 @@
 |:------ |:--------:|:-----:|:-----:|:-----------:|:--------:|:-----------:|
 | CREAM  | 2022CVPR | VGG16 | -     | 52.4/64.2   | 68.3     | -/-         |
 | PSOL   | 2020CVPR | VGG16 | VGG16 | 50.9/60.9   | 64.0     | -/-         |
+| MEIL   | 2020CVPR | VGG16 | -     | 46.8/-      | -        | 70.3/-      |
+| ADL    | 2019CVPR | VGG16 | -     | 44.9/-      | -        | 69.5/-      |
 | CAM    | 2016CVPR | VGG16 | -     | 42.8/54.9   | 59.0     | 68.8/88.6   |
 
 ### InceptionV3
@@ -106,6 +113,8 @@
 |:------ |:--------:|:-----------:|:-----------:|:-----------:|:--------:|:-----------:|
 | CREAM  | 2022CVPR | InceptionV3 | -           | 56.1/66.2   | 69.0     | -/-         |
 | PSOL   | 2020CVPR | InceptionV3 | InceptionV3 | 54.8/63.3   | 65.2     | -/-         |
+| MEIL   | 2020CVPR | InceptionV3 | -           | 49.5/-      | -        | 73.3/-      |
+| ADL    | 2019CVPR | InceptionV3 | -           | 48.7/-      | -        | 72.8/-      |
 | SPG    | 2018ECCV | InceptionV3 | -           | 48.6/60.0   | 64.7     |             |
 | CAM    | 2016CVPR | InceptionV3 | -           | 46.3/58.2   | 62.7     | 73.3/91.8   |
 
@@ -115,6 +124,7 @@
 |:------- |:--------:|:-------------:|:-----:|:-----------:|:--------:|:-----------:|
 |         |          | **ResNet50**  |       |             |          |             |
 | DA-WSOL | 2022CVPR | ResNet50      | -     | 54.9/-      | 70.2     | -/-         |
+| CutMix  | 2019ICCV | ResNet50      | -     | 47.25/-     | -        | 78.6/94.1   |
 |         |          | **GoogleNet** |       |             |          |             |
 | CAM     | 2016CVPR | GoogleNet     | -     | 41.1/50.7   | -        | 73.8/91.5   |
 
@@ -130,49 +140,55 @@ To do
 
 ## 2022
 
-- **CREAM:** *2022CVPR* CREAM:  Weakly Supervised Object Localization via Class RE-Activation Mapping
-- **DA-WSOL:** *2022CVPR* Weakly Supervised Object Localization as Domain Adaption
-- **ViTOL:** *2022CVPRW* ViTOL: Vision Transformer for Weakly Supervised Object Localization
-- 2022TPAMI Evaluation for Weakly Supervised Object Localization Protocol, Metrics, and Datasets
-- 2022TNNLS Diverse Complementary Part Mining for Weakly Supervised Object Localization
-- 2022PR Gradient-based refined class activation map for weakly supervised object localization
-- 2022arxiv Learning Consistency from High-quality Pseudo-labels for Weakly Supervised Object Localization
+- **CREAM:** ***2022CVPR*** CREAM:  Weakly Supervised Object Localization via Class RE-Activation Mapping
+- **DA-WSOL:** ***2022CVPR*** Weakly Supervised Object Localization as Domain Adaption
+- **ViTOL:** ***2022CVPRW*** ViTOL: Vision Transformer for Weakly Supervised Object Localization
+- ***2022TPAMI*** Evaluation for Weakly Supervised Object Localization Protocol, Metrics, and Datasets
+- ***2022TNNLS*** Diverse Complementary Part Mining for Weakly Supervised Object Localization
+- ***2022PR*** Gradient-based refined class activation map for weakly supervised object localization
+- ***2022arxiv*** Learning Consistency from High-quality Pseudo-labels for Weakly Supervised Object Localization
 
 ## 2021
 
-- **TS-CAM:** *2021ICCV* TS-CAM: Token Semantic Coupled Attention Map for Weakly Supervised Object Localization
-- 2021TIP Multi-Scale Low-Discriminative Feature Reactivation for Weakly Supervised Object Localization
-- 2021TIP LayerCAM: Exploring Hierarchical Class Activation Maps for Localization
-- 2021PR Region-based dropout with attention prior for weakly supervised object localization
-- 2021arxiv Background-aware Classification Activation Map for Weakly Supervised Object Localization
-- 2021arxiv MinMaxCAM Improving object coverage for CAM-based Weakly Supervised Object Localization
-- 2021arxiv Weakly Supervised Foreground Learning for Weakly Supervised Localization and Detection
+- **TS-CAM:** ***2021ICCV*** TS-CAM: Token Semantic Coupled Attention Map for Weakly Supervised Object Localization
+- ***2021TIP*** Multi-Scale Low-Discriminative Feature Reactivation for Weakly Supervised Object Localization
+- ***2021TIP*** LayerCAM: Exploring Hierarchical Class Activation Maps for Localization
+- ***2021PR*** Region-based dropout with attention prior for weakly supervised object localization
+- ***2021arxiv*** Background-aware Classification Activation Map for Weakly Supervised Object Localization
+- ***2021arxiv*** MinMaxCAM Improving object coverage for CAM-based Weakly Supervised Object Localization
+- ***2021arxiv*** Weakly Supervised Foreground Learning for Weakly Supervised Localization and Detection
 
 ## 2020
 
-- **PSOL:** *2020CVPR* Rethinking the Route Towards Weakly Supervised Object Localization
-- 2020arxiv Rethinking Localization Map Towards Accurate Object Perception with Self-Enhancement Maps
+- **PSOL:** ***2020CVPR*** Rethinking the Route Towards Weakly Supervised Object Localization
+- ***2020CVPR*** Evaluating Weakly Supervised Object Localization Methods Right
+- **MEIL:** ***2020CVPR*** Erasing Integrated Learning  A Simple yet Effective Approach for Weakly Supervised Object Localization
+- ***2020ICPR*** Dual-attention Guided Dropblock Module for Weakly Supervised Object Localization
+- ***2020arxiv*** Rethinking Localization Map Towards Accurate Object Perception with Self-Enhancement Maps
 
 ## 2019
 
-- **DANet:** *2019ICCV* DANet: Divergent Activation for Weakly Supervised Object Localization
-- 2019arxiv Dual-attention Focused Module for Weakly Supervised Object Localization
-- 2019arxiv Weakly Supervised Localization Using Background Images
-- 2019arxiv Weakly Supervised Object Localization with Inter-Intra Regulated CAMs
+- **ADL:** ***2019CVPR*** Attention-based Dropout Layer for Weakly Supervised Object Localization
+- **DANet:** ***2019ICCV*** DANet: Divergent Activation for Weakly Supervised Object Localization
+- **CutMix:** ***2019ICCV*** CutMix: Regularization Strategy to Train Strong Classifiers with Localizable Features
+- ***2019ICLR*** Marginalized average attentional network for weakly-supervised learning
+- ***2019arxiv*** Dual-attention Focused Module for Weakly Supervised Object Localization
+- ***2019arxiv*** Weakly Supervised Localization Using Background Images
+- ***2019arxiv*** Weakly Supervised Object Localization with Inter-Intra Regulated CAMs
 
 ## 2018
 
-- **ACoL:** *2018CVPR* Adversarial Complementary Learning for Weakly Supervised Object Localization
-- **SPG:** *2018ECCV* Self-produced Guidance for Weakly-supervised Object Localization
+- **ACoL:** ***2018CVPR*** Adversarial Complementary Learning for Weakly Supervised Object Localization
+- **SPG:** ***2018ECCV*** Self-produced Guidance for Weakly-supervised Object Localization
 
 ## 2017
 
-- **Grad-CAM:** *2017ICCV* Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization
-- **HaS:** *2017ICCV* Hide-and-Seek Forcing a Network to be Meticulous for Weakly-supervised Object and Action Localization
+- **Grad-CAM:** ***2017ICCV*** Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization
+- **HaS:** ***2017ICCV*** Hide-and-Seek Forcing a Network to be Meticulous for Weakly-supervised Object and Action Localization
 
 ## 2016
 
-- **CAM:** *2016CVPR* Learning Deep Features for Discriminative Localization
+- **CAM:** ***2016CVPR*** Learning Deep Features for Discriminative Localization
 
 # 3. Dataset
 
