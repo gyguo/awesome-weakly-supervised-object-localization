@@ -3,6 +3,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)![GitHub stars](https://img.shields.io/github/stars/gyguo/awesome-weakly-supervised-object-localization?color=yellow)  ![GitHub forks](https://img.shields.io/github/forks/gyguo/awesome-weakly-supervised-object-localization?color=green&label=Fork)  ![visitors](https://visitor-badge.glitch.me/badge?page_id=gyguo.awesome-weakly-supervised-object-localization)
 
 # Table of Contents
+
 - [1. Performance](#1-performance)
   * [1.1. Top1/5 results on CUB-200-2011](#11-top1-5-results-on-cub-200-2011)
     + [Transformer](#transformer)
@@ -30,7 +31,6 @@
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
-  
 ------
 
 **<u>Contact gyguo95@gmail.com if any paper is missed!</u>**
@@ -59,6 +59,7 @@
 
 | Method | Pub.     | Bac.C | Bac.L | Top-1/5 Loc | GT-Known | Top-1/5 Cls |
 |:------ |:--------:|:-----:|:-----:|:-----------:|:--------:|:-----------:|
+| CREAM  | 2022CVPR | VGG16 | -     | 70.4/85.7   | 91.0     |             |
 | PSOL   | 2020CVPR | VGG16 | VGG16 | 66.3/84.1   | -        | -/-         |
 | DANet  | 2019ICCV | VGG16 | -     | 52.5/62.0   | 67.7     | 75.4/92.3   |
 | CAM    | 2016CVPR | VGG16 | -     | 44.2/52.2   | 56.0     | 76.6/92.5   |
@@ -68,6 +69,7 @@
 
 | Method | Pub.     | Bac.C       | Bac.L       | Top-1/5 Loc | GT-Known | Top-1/5 Cls |
 |:------ |:--------:|:-----------:|:-----------:|:-----------:|:--------:|:-----------:|
+| CREAM  | 2022CVPR | InceptionV3 | -           | 71.8/86.4   | 90.4     | -/-         |
 | PSOL   | 2020CVPR | InceptionV3 | InceptionV3 | 65.5/83.4   | -        | -/-         |
 | DANet  | 2019ICCV | InceptionV3 | -           | 49.5/60.5   | 67.0     | 71.2/90.6   |
 | SPG    | 2018ECCV | InceptionV3 | -           | 46.6/57.7   | -        | -           |
@@ -91,6 +93,7 @@
 
 | Method | Pub.     | Bac.C | Bac.L | Top-1/5 Loc | GT-Known | Top-1/5 Cls |
 |:------ |:--------:|:-----:|:-----:|:-----------:|:--------:|:-----------:|
+| CREAM  | 2022CVPR | VGG16 | -     | 52.4/64.2   | 68.3     | -/-         |
 | PSOL   | 2020CVPR | VGG16 | VGG16 | 50.9/60.9   | 64.0     | -/-         |
 | CAM    | 2016CVPR | VGG16 | -     | 42.8/54.9   | 59.0     | 68.8/88.6   |
 
@@ -98,6 +101,7 @@
 
 | Method | Pub.     | Bac.C       | Bac.L       | Top-1/5 Loc | GT-Known | Top-1/5 Cls |
 |:------ |:--------:|:-----------:|:-----------:|:-----------:|:--------:|:-----------:|
+| CREAM  | 2022CVPR | InceptionV3 | -           | 56.1/66.2   | 69.0     | -/-         |
 | PSOL   | 2020CVPR | InceptionV3 | InceptionV3 | 54.8/63.3   | 65.2     | -/-         |
 | SPG    | 2018ECCV | InceptionV3 | -           | 48.6/60.0   | 64.7     |             |
 | CAM    | 2016CVPR | InceptionV3 | -           | 46.3/58.2   | 62.7     | 73.3/91.8   |
@@ -120,19 +124,34 @@ To do
 
 ## 2022
 
+- **CREAM:** *2022CVPR* CREAM:  Weakly Supervised Object Localization via Class RE-Activation Mapping
 - **ViTOL:** *2022CVPRW* ViTOL: Vision Transformer for Weakly Supervised Object Localization
+- 2022TPAMI Evaluation for Weakly Supervised Object Localization Protocol, Metrics, and Datasets
+- 2022TNNLS Diverse Complementary Part Mining for Weakly Supervised Object Localization
+- 2022PR Gradient-based refined class activation map for weakly supervised object localization
+- 2022arxiv Learning Consistency from High-quality Pseudo-labels for Weakly Supervised Object Localization
 
 ## 2021
 
 - **TS-CAM:** *2021ICCV* TS-CAM: Token Semantic Coupled Attention Map for Weakly Supervised Object Localization
+- 2021TIP Multi-Scale Low-Discriminative Feature Reactivation for Weakly Supervised Object Localization
+- 2021TIP LayerCAM: Exploring Hierarchical Class Activation Maps for Localization
+- 2021PR Region-based dropout with attention prior for weakly supervised object localization
+- 2021arxiv Background-aware Classification Activation Map for Weakly Supervised Object Localization
+- 2021arxiv MinMaxCAM Improving object coverage for CAM-based Weakly Supervised Object Localization
+- 2021arxiv Weakly Supervised Foreground Learning for Weakly Supervised Localization and Detection
 
 ## 2020
 
 - **PSOL:** *2020CVPR* Rethinking the Route Towards Weakly Supervised Object Localization
+- 2020arxiv Rethinking Localization Map Towards Accurate Object Perception with Self-Enhancement Maps
 
 ## 2019
 
 - **DANet:** *2019ICCV* DANet: Divergent Activation for Weakly Supervised Object Localization
+- 2019arxiv Dual-attention Focused Module for Weakly Supervised Object Localization
+- 2019arxiv Weakly Supervised Localization Using Background Images
+- 2019arxiv Weakly Supervised Object Localization with Inter-Intra Regulated CAMs
 
 ## 2018
 
