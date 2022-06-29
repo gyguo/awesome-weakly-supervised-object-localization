@@ -163,6 +163,7 @@ To do
 - **PSOL:** ***2020CVPR*** Rethinking the Route Towards Weakly Supervised Object Localization
 - ***2020CVPR*** Evaluating Weakly Supervised Object Localization Methods Right
 - **MEIL:** ***2020CVPR*** Erasing Integrated Learning  A Simple yet Effective Approach for Weakly Supervised Object Localization
+- **GC-Net:** ***2020ECCV*** Geometry Constrained Weakly Supervised Object Localization
 - ***2020ICPR*** Dual-attention Guided Dropblock Module for Weakly Supervised Object Localization
 - ***2020arxiv*** Rethinking Localization Map Towards Accurate Object Perception with Self-Enhancement Maps
 
