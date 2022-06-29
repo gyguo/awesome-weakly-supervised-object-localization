@@ -20,7 +20,7 @@
 - [2. Paper List](#2-paper-list) 
   * [2022](#2022) **[x]**
   * [2021](#2021) **[x]**
-  * [2020](#2020) **[x]**
+  * [2020](#2020) **[✓]**
   * [2019](#2019) **[✓]**
   * [2018](#2018) **[✓]**
   * [2017](#2017) **[✓]**
@@ -61,6 +61,7 @@
 |:------ |:--------:|:-----:|:-----:|:-----------:|:--------:|:-----------:|
 | CREAM  | 2022CVPR | VGG16 | -     | 70.4/85.7   | 91.0     |             |
 | PSOL   | 2020CVPR | VGG16 | VGG16 | 66.3/84.1   | -        | -/-         |
+| GC-Net | 2020ECCV | VGG16 | VGG16 | 63.2/75.5   | 81.1     | 76.8/92.3   |
 | MEIL   | 2020CVPR | VGG16 | -     | 57.5/-      | 73.8     | 74.8/-      |
 | DANet  | 2019ICCV | VGG16 | -     | 52.5/62.0   | 67.7     | 75.4/92.3   |
 | CutMix | 2019ICCV | VGG16 | -     | 52.5/-      | -        | -           |
@@ -74,6 +75,7 @@
 |:------ |:--------:|:-----------:|:-----------:|:-----------:|:--------:|:-----------:|
 | CREAM  | 2022CVPR | InceptionV3 | -           | 71.8/86.4   | 90.4     | -/-         |
 | PSOL   | 2020CVPR | InceptionV3 | InceptionV3 | 65.5/83.4   | -        | -/-         |
+| I2C    | 2020ECCV | InceptionV3 |             | 56.0/68.3   | 72.6     | -/-         |
 | DANet  | 2019ICCV | InceptionV3 | -           | 49.5/60.5   | 67.0     | 71.2/90.6   |
 | ADL    | 2019CVPR | InceptionV3 | -           | 53.0/-      | -        | 74.6/-      |
 | SPG    | 2018ECCV | InceptionV3 | -           | 46.6/57.7   | -        | -           |
@@ -103,6 +105,7 @@
 |:------ |:--------:|:-----:|:-----:|:-----------:|:--------:|:-----------:|
 | CREAM  | 2022CVPR | VGG16 | -     | 52.4/64.2   | 68.3     | -/-         |
 | PSOL   | 2020CVPR | VGG16 | VGG16 | 50.9/60.9   | 64.0     | -/-         |
+| I2C    | 2020ECCV | VGG16 | -     | 47.4/58.5   | 63.9     | 69.4/89.3   |
 | MEIL   | 2020CVPR | VGG16 | -     | 46.8/-      | -        | 70.3/-      |
 | ADL    | 2019CVPR | VGG16 | -     | 44.9/-      | -        | 69.5/-      |
 | CAM    | 2016CVPR | VGG16 | -     | 42.8/54.9   | 59.0     | 68.8/88.6   |
@@ -113,6 +116,8 @@
 |:------ |:--------:|:-----------:|:-----------:|:-----------:|:--------:|:-----------:|
 | CREAM  | 2022CVPR | InceptionV3 | -           | 56.1/66.2   | 69.0     | -/-         |
 | PSOL   | 2020CVPR | InceptionV3 | InceptionV3 | 54.8/63.3   | 65.2     | -/-         |
+| I2C    | 2020ECCV | InceptionV3 | -           | 53.1/64.1   | 68.5     | 73.3/91.6   |
+| GC-Net | 2020ECCV | InceptionV3 | InceptionV3 | 49.1/58.1   | -        | 77.4/93.6   |
 | MEIL   | 2020CVPR | InceptionV3 | -           | 49.5/-      | -        | 73.3/-      |
 | ADL    | 2019CVPR | InceptionV3 | -           | 48.7/-      | -        | 72.8/-      |
 | SPG    | 2018ECCV | InceptionV3 | -           | 48.6/60.0   | 64.7     |             |
@@ -164,6 +169,8 @@ To do
 - ***2020CVPR*** Evaluating Weakly Supervised Object Localization Methods Right
 - **MEIL:** ***2020CVPR*** Erasing Integrated Learning  A Simple yet Effective Approach for Weakly Supervised Object Localization
 - **GC-Net:** ***2020ECCV*** Geometry Constrained Weakly Supervised Object Localization
+- ***I2C:*** ***2020ECCV*** Inter-Image Communication for Weakly Supervised Localization
+- ***2020ECCV*** Pairwise Similarity Knowledge Transfer for Weakly Supervised Object Localization
 - ***2020ICPR*** Dual-attention Guided Dropblock Module for Weakly Supervised Object Localization
 - ***2020arxiv*** Rethinking Localization Map Towards Accurate Object Perception with Self-Enhancement Maps
 
