@@ -76,9 +76,12 @@
 
 ### Others
 
-| Method | Pub.     | Bac.C     | Bac.L | Top-1/5 Loc | GT-Known | Top-1/5 Cls |
-|:------ |:--------:|:---------:|:-----:|:-----------:|:--------:|:-----------:|
-| CAM    | 2016CVPR | GoogleNet | -     | 41.1/50.7   | -        | 73.8/91.5   |
+| Method  | Pub.     | Bac.C         | Bac.L | Top-1/5 Loc | GT-Known | Top-1/5 Cls |
+|:------- |:--------:|:-------------:|:-----:|:-----------:|:--------:|:-----------:|
+|         |          | **ResNet50**  |       |             |          |             |
+| DA-WSOL | 2022CVPR | ResNet50      | -     | 66.8/-      | 82.3     | -/-         |
+|         |          | **GoogleNet** |       |             |          |             |
+| CAM     | 2016CVPR | GoogleNet     | -     | 41.1/50.7   | -        | 73.8/91.5   |
 
 ## 1.2. Top1/5 results on ImageNet
 
@@ -108,9 +111,12 @@
 
 ### Others
 
-| Method | Pub.     | Bac.C     | Bac.L | Top-1/5 Loc | GT-Known | Top-1/5 Cls |
-|:------ |:--------:|:---------:|:-----:|:-----------:|:--------:|:-----------:|
-| CAM    | 2016CVPR | GoogleNet | -     | 41.1/50.7   | -        | 73.8/91.5   |
+| Method  | Pub.     | Bac.C         | Bac.L | Top-1/5 Loc | GT-Known | Top-1/5 Cls |
+|:------- |:--------:|:-------------:|:-----:|:-----------:|:--------:|:-----------:|
+|         |          | **ResNet50**  |       |             |          |             |
+| DA-WSOL | 2022CVPR | ResNet50      | -     | 54.9/-      | 70.2     | -/-         |
+|         |          | **GoogleNet** |       |             |          |             |
+| CAM     | 2016CVPR | GoogleNet     | -     | 41.1/50.7   | -        | 73.8/91.5   |
 
 ## 1.3. MaxBoxAccV2 results on CUB-200-2011
 
@@ -125,6 +131,7 @@ To do
 ## 2022
 
 - **CREAM:** *2022CVPR* CREAM:  Weakly Supervised Object Localization via Class RE-Activation Mapping
+- **DA-WSOL:** *2022CVPR* Weakly Supervised Object Localization as Domain Adaption
 - **ViTOL:** *2022CVPRW* ViTOL: Vision Transformer for Weakly Supervised Object Localization
 - 2022TPAMI Evaluation for Weakly Supervised Object Localization Protocol, Metrics, and Datasets
 - 2022TNNLS Diverse Complementary Part Mining for Weakly Supervised Object Localization
