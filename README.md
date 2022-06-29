@@ -3,7 +3,6 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)![GitHub stars](https://img.shields.io/github/stars/gyguo/awesome-weakly-supervised-object-localization?color=yellow)  ![GitHub forks](https://img.shields.io/github/forks/gyguo/awesome-weakly-supervised-object-localization?color=green&label=Fork)  ![visitors](https://visitor-badge.glitch.me/badge?page_id=gyguo.awesome-weakly-supervised-object-localization)
 
 # Table of Contents
-
 - [1. Performance](#1-performance)
   * [1.1. Top1/5 results on CUB-200-2011](#11-top1-5-results-on-cub-200-2011)
     + [Transformer](#transformer)
@@ -28,24 +27,11 @@
 - [3. Dataset](#3-dataset)
   * [CUB-200-2011](#cub-200-2011)
   * [ImageNet](#imagenet)
+
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
-- [2. Paper List](#2-paper-list)
   
-  * [2022](#2022)
-  * [2021](#2021)
-  * [2020](#2020)
-  * [2019](#2019)
-  * [2018](#2018)
-  * [2017](#2017)
-  * [2016](#2016)
-
-- [3. Dataset](#3-dataset)
-  
-  * [CUB-200-2011](#cub-200-2011)
-  * [ImageNet](#imagenet)
-  
-  ------
+------
 
 **<u>Contact gyguo95@gmail.com if any paper is missed!</u>**
 
