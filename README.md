@@ -147,6 +147,7 @@ To do
 
 - **CREAM:** ***2022CVPR*** CREAM:  Weakly Supervised Object Localization via Class RE-Activation Mapping
 - **DA-WSOL:** ***2022CVPR*** Weakly Supervised Object Localization as Domain Adaption
+- **AlignMix:** ***2022CVPR*** AlignMix: Improving representation by interpolating aligned features
 - **ViTOL:** ***2022CVPRW*** ViTOL: Vision Transformer for Weakly Supervised Object Localization
 - ***2022TPAMI*** Evaluation for Weakly Supervised Object Localization Protocol, Metrics, and Datasets
 - ***2022TNNLS*** Diverse Complementary Part Mining for Weakly Supervised Object Localization
