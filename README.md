@@ -152,6 +152,7 @@ To do
 - ***2022TPAMI*** Evaluation for Weakly Supervised Object Localization Protocol, Metrics, and Datasets
 - ***2022TNNLS*** Diverse Complementary Part Mining for Weakly Supervised Object Localization
 - ***2022PR*** Gradient-based refined class activation map for weakly supervised object localization
+- ***2022TMM*** Dual-Gradients Localization Framework With Skip-Layer Connections for Weakly Supervised Object Localization
 - ***2022arxiv*** Learning Consistency from High-quality Pseudo-labels for Weakly Supervised Object Localization
 
 ## 2021
