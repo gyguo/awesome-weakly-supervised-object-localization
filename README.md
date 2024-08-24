@@ -38,19 +38,28 @@
 
 
 # 1. Paper List
+## 2024
+
+- ***2024CVPR*** CAM Back Again: Large Kernel CNNs from a Weakly Supervised Object Localization Perspective
+- ***2024TPAMI*** Boosting Weakly Supervised Object Localization and Segmentation With Domain Adaption
+- ***2024CVPR*** 
+
+
 
 ## 2023
-
-- **GenPromp:** ***2023ICCV*** Generative Prompt Model for Weakly Supervised Object Localization
+- ***2023TPAMI*** Evaluation for Weakly Supervised Object Localization: Protocol, Metrics, and Datasets
+- ***2023ACM MM*** LocLoc: Low-level Cues and Local-area Guides for Weakly Supervised Object Localization
 - **WEND:** ***2023ACM MM*** Rethinking the Localization in Weakly Supervised Object Localization
+- **GenPromp:** ***2023ICCV*** Generative Prompt Model for Weakly Supervised Object Localization
+- ***2023PR***  Weakly supervised foreground learning for weakly supervised localization and detection
 
 ## 2022
-
+- ***2022CVPR*** C2AM: Contrastive Learning of Class-Agnostic Activation Map for Weakly Supervised Object Localization and Semantic Segmentation
+- ***2022ECCV*** Bagging regional classification activation maps for weakly supervised object localization
 - **CREAM:** ***2022CVPR*** CREAM:  Weakly Supervised Object Localization via Class RE-Activation Mapping
 - **DA-WSOL:** ***2022CVPR*** Weakly Supervised Object Localization as Domain Adaption
 - **AlignMix:** ***2022CVPR*** AlignMix: Improving representation by interpolating aligned features
 - **ViTOL:** ***2022CVPRW*** ViTOL: Vision Transformer for Weakly Supervised Object Localization
-- ***2022TPAMI*** Evaluation for Weakly Supervised Object Localization Protocol, Metrics, and Datasets
 - ***2022TNNLS*** Diverse Complementary Part Mining for Weakly Supervised Object Localization
 - ***2022PR*** Gradient-based refined class activation map for weakly supervised object localization
 - ***2022TMM*** Dual-Gradients Localization Framework With Skip-Layer Connections for Weakly Supervised Object Localization
@@ -209,8 +218,6 @@
 | CAM     | 2016CVPR | GoogleNet     | -     | 41.1/50.7   | -        | 73.8/91.5   |
 
 
-
-
 # 3. Dataset
 
 ## CUB-200-2011
@@ -223,7 +230,6 @@
  publisher={California Institute of Technology}
 }
 ```
-
 ## ImageNet
 
 ```
@@ -236,3 +242,8 @@
   organization={Ieee}
 }
 ```
+
+---
+# 4. Related 
+
+
