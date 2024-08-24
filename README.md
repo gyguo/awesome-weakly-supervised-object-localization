@@ -3,27 +3,26 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)![GitHub stars](https://img.shields.io/github/stars/gyguo/awesome-weakly-supervised-object-localization?color=yellow)  ![GitHub forks](https://img.shields.io/github/forks/gyguo/awesome-weakly-supervised-object-localization?color=green&label=Fork)  ![visitors](https://visitor-badge.glitch.me/badge?page_id=gyguo.awesome-weakly-supervised-object-localization)
 
 # Table of Contents
-
-- [1. Performance](#1-performance)
-  * [1.1. Top1/5 results on CUB-200-2011](#11-top1-5-results-on-cub-200-2011) **[✓]**
+- [1. Paper List](#1-paper-list)
+  * [2023](#2023)
+  * [2022](#2022)
+  * [2021](#2021)
+  * [2020](#2020)
+  * [2019](#2019)
+  * [2018](#2018)
+  * [2017](#2017)
+  * [2016](#2016)
+- [2. Performance](#2-performance)
+  * [2.1. Top1/5 results on CUB-200-2011](#21-results-on-cub-200-2011)
     + [Transformer](#transformer)
     + [VGG](#vgg)
     + [InceptionV3](#inceptionv3)
     + [Others](#others)
-  * [1.2. Top1/5 results on ImageNet](#12-top1-5-results-on-imagenet) **[✓]**
+  * [2.2. Top1/5 results on ImageNet](#22-results-on-imagenet)
     + [Transformer](#transformer-1)
     + [VGG](#vgg-1)
     + [InceptionV3](#inceptionv3-1)
     + [Others](#others-1)
-- [2. Paper List](#2-paper-list) 
-  * [2023](#2023) **[✓]**
-  * [2022](#2022) **[✓]**
-  * [2021](#2021) **[✓]**
-  * [2020](#2020) **[✓]**
-  * [2019](#2019) **[✓]**
-  * [2018](#2018) **[✓]**
-  * [2017](#2017) **[✓]**
-  * [2016](#2016) **[✓]**
 - [3. Dataset](#3-dataset)
   * [CUB-200-2011](#cub-200-2011)
   * [ImageNet](#imagenet)
@@ -36,111 +35,9 @@
 
 ------
 
-# 1. Performance
 
-- **Bac. C:** backbone for classification 
-- **Bac. L:** backbone for localization, **does not exist** for methods use a single network for classification and localization.
-- **Top-1/Top-5 CLS:** is correct if the Top-1/Top-5 predict categories contain the correct label.
-- **GT-known Loc** is correct when the intersection over union (IoU) between the ground-truth and the prediction is larger than 0.5 and does not consider whether the predicted category is correct.
-- **Top-1/Top-5 Loc** is correct when Top-1/Top-5 CLS and GT-Known LOC are both correct.
-- **"-"** indicates not exist.  **"?"** indicates the corresponding item is not mentioned in the paper.
 
-## 1.1. Top1/5 results on CUB-200-2011
-
-### Transformer
-
-| Method   | Pub.      | Bac.C           | Bac.L    | Top-1/5 Loc | GT-Known | Top-1/5 Cls |
-|:-------- |:---------:|:---------------:|:--------:|:-----------:|:--------:|:-----------:|
-| GenPromp | 2023CVPR  | EfficientNet-B7 | -        | 87.0/96.1   | 98.0     | -/-         |
-| WEND     | 2023ACMMM | EfficientNet-B7 | ResNet50 | 83.77/93.84 | 95.78    | -/-         |
-| SCM      | 2022ECCV  | Deit-S          | -        | 76.4/91.6   | 96.6     | 78.5/94.5   |
-| TS-CAM   | 2021ICCV  | Deit-S          | -        | 71.3/83.8   | 87.7     | -/-         |
-
-### VGG
-
-| Method  | Pub.     | Bac.C | Bac.L | Top-1/5 Loc | GT-Known | Top-1/5 Cls |
-|:------- |:--------:|:-----:|:-----:|:-----------:|:--------:|:-----------:|
-| CREAM   | 2022CVPR | VGG16 | -     | 70.4/85.7   | 91.0     | -/-         |
-| SLT-Net | 2021CVPR | VGG16 | VGG16 | 67.8/-      | 87.6     | 76.6/-      |
-| PSOL    | 2020CVPR | VGG16 | VGG16 | 66.3/84.1   | -        | -/-         |
-| GC-Net  | 2020ECCV | VGG16 | VGG16 | 63.2/75.5   | 81.1     | 76.8/92.3   |
-| MEIL    | 2020CVPR | VGG16 | -     | 57.5/-      | 73.8     | 74.8/-      |
-| DANet   | 2019ICCV | VGG16 | -     | 52.5/62.0   | 67.7     | 75.4/92.3   |
-| CutMix  | 2019ICCV | VGG16 | -     | 52.5/-      | -        | -           |
-| ADL     | 2019CVPR | VGG16 | -     | 52.4/-      | 75.4     | 65.3/-      |
-| CAM     | 2016CVPR | VGG16 | -     | 44.2/52.2   | 56.0     | 76.6/92.5   |
-| SPG     | 2018ECCV | VGG16 | -     | 48.9/57.9   | 58.9     | 75.5/92.1   |
-
-### InceptionV3
-
-| Method  | Pub.     | Bac.C       | Bac.L       | Top-1/5 Loc | GT-Known | Top-1/5 Cls |
-|:------- |:--------:|:-----------:|:-----------:|:-----------:|:--------:|:-----------:|
-| CREAM   | 2022CVPR | InceptionV3 | -           | 71.8/86.4   | 90.4     | -/-         |
-| SLT-Net | 2021CVPR | InceptionV3 | VGG16       | 66.1/-      | 86.5     | 76.4/-      |
-| PSOL    | 2020CVPR | InceptionV3 | InceptionV3 | 65.5/83.4   | -        | -/-         |
-| I2C     | 2020ECCV | InceptionV3 |             | 56.0/68.3   | 72.6     | -/-         |
-| DANet   | 2019ICCV | InceptionV3 | -           | 49.5/60.5   | 67.0     | 71.2/90.6   |
-| ADL     | 2019CVPR | InceptionV3 | -           | 53.0/-      | -        | 74.6/-      |
-| SPG     | 2018ECCV | InceptionV3 | -           | 46.6/57.7   | -        | -           |
-
-### Others
-
-| Method  | Pub.     | Bac.C         | Bac.L | Top-1/5 Loc | GT-Known | Top-1/5 Cls |
-|:------- |:--------:|:-------------:|:-----:|:-----------:|:--------:|:-----------:|
-|         |          | **ResNet50**  |       |             |          |             |
-| DA-WSOL | 2022CVPR | ResNet50      | -     | 66.8/-      | 82.3     | -/-         |
-| CutMix  | 2019ICCV | ResNet50      | -     | 54.81/-     | -        | -/-         |
-|         |          | **GoogleNet** |       |             |          |             |
-| CAM     | 2016CVPR | GoogleNet     | -     | 41.1/50.7   | -        | 73.8/91.5   |
-
-## 1.2. Top1/5 results on ImageNet
-
-### Transformer
-
-| Method   | Pub.      | Bac.C           | Bac.L | Top-1/5 Loc | GT-Known | Top-1/5 Cls |
-|:-------- |:---------:|:---------------:|:-----:|:-----------:|:--------:|:-----------:|
-| GenPromp | 2023ICCV  | EfficientNet-B7 | -     | 65.2/73.4   | 75.0     | -/-         |
-| ViTOL    | 2022CVPRW | DeiT-B          | -     | 58.6/-      | 72.5     | 77.1/-      |
-| SCM      | 2022ECCN  | Deit-S          | -     | 56.1/66/4   | 68.8     | 76.7/93.0   |
-| TS-CAM   | 2021ICCV  | Deit-S          | -     | 53.4/64.3   | 67.6     | -/-         |
-
-### VGG
-
-| Method  | Pub.     | Bac.C | Bac.L       | Top-1/5 Loc | GT-Known | Top-1/5 Cls |
-|:------- |:--------:|:-----:|:-----------:|:-----------:|:--------:|:-----------:|
-| CREAM   | 2022CVPR | VGG16 | -           | 52.4/64.2   | 68.3     | -/-         |
-| SLT-Net | 2021CVPR | VGG16 | InceptionV3 | 51.2/62.4   | 67.2     | 72.4/-      |
-| PSOL    | 2020CVPR | VGG16 | VGG16       | 50.9/60.9   | 64.0     | -/-         |
-| I2C     | 2020ECCV | VGG16 | -           | 47.4/58.5   | 63.9     | 69.4/89.3   |
-| MEIL    | 2020CVPR | VGG16 | -           | 46.8/-      | -        | 70.3/-      |
-| ADL     | 2019CVPR | VGG16 | -           | 44.9/-      | -        | 69.5/-      |
-| CAM     | 2016CVPR | VGG16 | -           | 42.8/54.9   | 59.0     | 68.8/88.6   |
-
-### InceptionV3
-
-| Method  | Pub.     | Bac.C       | Bac.L       | Top-1/5 Loc | GT-Known | Top-1/5 Cls |
-|:------- |:--------:|:-----------:|:-----------:|:-----------:|:--------:|:-----------:|
-| CREAM   | 2022CVPR | InceptionV3 | -           | 56.1/66.2   | 69.0     | -/-         |
-| SLT-Net | 2021CVPR | InceptionV3 | InceptionV3 | 55.7/65.4   | 67.6     | 78.1/-      |
-| PSOL    | 2020CVPR | InceptionV3 | InceptionV3 | 54.8/63.3   | 65.2     | -/-         |
-| I2C     | 2020ECCV | InceptionV3 | -           | 53.1/64.1   | 68.5     | 73.3/91.6   |
-| GC-Net  | 2020ECCV | InceptionV3 | InceptionV3 | 49.1/58.1   | -        | 77.4/93.6   |
-| MEIL    | 2020CVPR | InceptionV3 | -           | 49.5/-      | -        | 73.3/-      |
-| ADL     | 2019CVPR | InceptionV3 | -           | 48.7/-      | -        | 72.8/-      |
-| SPG     | 2018ECCV | InceptionV3 | -           | 48.6/60.0   | 64.7     |             |
-| CAM     | 2016CVPR | InceptionV3 | -           | 46.3/58.2   | 62.7     | 73.3/91.8   |
-
-### Others
-
-| Method  | Pub.     | Bac.C         | Bac.L | Top-1/5 Loc | GT-Known | Top-1/5 Cls |
-|:------- |:--------:|:-------------:|:-----:|:-----------:|:--------:|:-----------:|
-|         |          | **ResNet50**  |       |             |          |             |
-| DA-WSOL | 2022CVPR | ResNet50      | -     | 54.9/-      | 70.2     | -/-         |
-| CutMix  | 2019ICCV | ResNet50      | -     | 47.25/-     | -        | 78.6/94.1   |
-|         |          | **GoogleNet** |       |             |          |             |
-| CAM     | 2016CVPR | GoogleNet     | -     | 41.1/50.7   | -        | 73.8/91.5   |
-
-# 2. Paper List
+# 1. Paper List
 
 ## 2023
 
@@ -206,6 +103,113 @@
 ## 2016
 
 - **CAM:** ***2016CVPR*** Learning Deep Features for Discriminative Localization
+
+
+# 2. Performance
+**Performance will no be updated anymore**
+- **Bac. C:** backbone for classification 
+- **Bac. L:** backbone for localization, **does not exist** for methods use a single network for classification and localization.
+- **Top-1/Top-5 CLS:** is correct if the Top-1/Top-5 predict categories contain the correct label.
+- **GT-known Loc** is correct when the intersection over union (IoU) between the ground-truth and the prediction is larger than 0.5 and does not consider whether the predicted category is correct.
+- **Top-1/Top-5 Loc** is correct when Top-1/Top-5 CLS and GT-Known LOC are both correct.
+- **"-"** indicates not exist.  **"?"** indicates the corresponding item is not mentioned in the paper.
+
+## 2.1. Results on CUB-200-2011
+
+### Transformer
+
+| Method   | Pub.      | Bac.C           | Bac.L    | Top-1/5 Loc | GT-Known | Top-1/5 Cls |
+|:-------- |:---------:|:---------------:|:--------:|:-----------:|:--------:|:-----------:|
+| GenPromp | 2023CVPR  | EfficientNet-B7 | -        | 87.0/96.1   | 98.0     | -/-         |
+| WEND     | 2023ACMMM | EfficientNet-B7 | ResNet50 | 83.77/93.84 | 95.78    | -/-         |
+| SCM      | 2022ECCV  | Deit-S          | -        | 76.4/91.6   | 96.6     | 78.5/94.5   |
+| TS-CAM   | 2021ICCV  | Deit-S          | -        | 71.3/83.8   | 87.7     | -/-         |
+
+### VGG
+
+| Method  | Pub.     | Bac.C | Bac.L | Top-1/5 Loc | GT-Known | Top-1/5 Cls |
+|:------- |:--------:|:-----:|:-----:|:-----------:|:--------:|:-----------:|
+| CREAM   | 2022CVPR | VGG16 | -     | 70.4/85.7   | 91.0     | -/-         |
+| SLT-Net | 2021CVPR | VGG16 | VGG16 | 67.8/-      | 87.6     | 76.6/-      |
+| PSOL    | 2020CVPR | VGG16 | VGG16 | 66.3/84.1   | -        | -/-         |
+| GC-Net  | 2020ECCV | VGG16 | VGG16 | 63.2/75.5   | 81.1     | 76.8/92.3   |
+| MEIL    | 2020CVPR | VGG16 | -     | 57.5/-      | 73.8     | 74.8/-      |
+| DANet   | 2019ICCV | VGG16 | -     | 52.5/62.0   | 67.7     | 75.4/92.3   |
+| CutMix  | 2019ICCV | VGG16 | -     | 52.5/-      | -        | -           |
+| ADL     | 2019CVPR | VGG16 | -     | 52.4/-      | 75.4     | 65.3/-      |
+| CAM     | 2016CVPR | VGG16 | -     | 44.2/52.2   | 56.0     | 76.6/92.5   |
+| SPG     | 2018ECCV | VGG16 | -     | 48.9/57.9   | 58.9     | 75.5/92.1   |
+
+### InceptionV3
+
+| Method  | Pub.     | Bac.C       | Bac.L       | Top-1/5 Loc | GT-Known | Top-1/5 Cls |
+|:------- |:--------:|:-----------:|:-----------:|:-----------:|:--------:|:-----------:|
+| CREAM   | 2022CVPR | InceptionV3 | -           | 71.8/86.4   | 90.4     | -/-         |
+| SLT-Net | 2021CVPR | InceptionV3 | VGG16       | 66.1/-      | 86.5     | 76.4/-      |
+| PSOL    | 2020CVPR | InceptionV3 | InceptionV3 | 65.5/83.4   | -        | -/-         |
+| I2C     | 2020ECCV | InceptionV3 |             | 56.0/68.3   | 72.6     | -/-         |
+| DANet   | 2019ICCV | InceptionV3 | -           | 49.5/60.5   | 67.0     | 71.2/90.6   |
+| ADL     | 2019CVPR | InceptionV3 | -           | 53.0/-      | -        | 74.6/-      |
+| SPG     | 2018ECCV | InceptionV3 | -           | 46.6/57.7   | -        | -           |
+
+### Others
+
+| Method  | Pub.     | Bac.C         | Bac.L | Top-1/5 Loc | GT-Known | Top-1/5 Cls |
+|:------- |:--------:|:-------------:|:-----:|:-----------:|:--------:|:-----------:|
+|         |          | **ResNet50**  |       |             |          |             |
+| DA-WSOL | 2022CVPR | ResNet50      | -     | 66.8/-      | 82.3     | -/-         |
+| CutMix  | 2019ICCV | ResNet50      | -     | 54.81/-     | -        | -/-         |
+|         |          | **GoogleNet** |       |             |          |             |
+| CAM     | 2016CVPR | GoogleNet     | -     | 41.1/50.7   | -        | 73.8/91.5   |
+
+## 2.2. Results on ImageNet
+
+### Transformer
+
+| Method   | Pub.      | Bac.C           | Bac.L | Top-1/5 Loc | GT-Known | Top-1/5 Cls |
+|:-------- |:---------:|:---------------:|:-----:|:-----------:|:--------:|:-----------:|
+| GenPromp | 2023ICCV  | EfficientNet-B7 | -     | 65.2/73.4   | 75.0     | -/-         |
+| ViTOL    | 2022CVPRW | DeiT-B          | -     | 58.6/-      | 72.5     | 77.1/-      |
+| SCM      | 2022ECCN  | Deit-S          | -     | 56.1/66/4   | 68.8     | 76.7/93.0   |
+| TS-CAM   | 2021ICCV  | Deit-S          | -     | 53.4/64.3   | 67.6     | -/-         |
+
+### VGG
+
+| Method  | Pub.     | Bac.C | Bac.L       | Top-1/5 Loc | GT-Known | Top-1/5 Cls |
+|:------- |:--------:|:-----:|:-----------:|:-----------:|:--------:|:-----------:|
+| CREAM   | 2022CVPR | VGG16 | -           | 52.4/64.2   | 68.3     | -/-         |
+| SLT-Net | 2021CVPR | VGG16 | InceptionV3 | 51.2/62.4   | 67.2     | 72.4/-      |
+| PSOL    | 2020CVPR | VGG16 | VGG16       | 50.9/60.9   | 64.0     | -/-         |
+| I2C     | 2020ECCV | VGG16 | -           | 47.4/58.5   | 63.9     | 69.4/89.3   |
+| MEIL    | 2020CVPR | VGG16 | -           | 46.8/-      | -        | 70.3/-      |
+| ADL     | 2019CVPR | VGG16 | -           | 44.9/-      | -        | 69.5/-      |
+| CAM     | 2016CVPR | VGG16 | -           | 42.8/54.9   | 59.0     | 68.8/88.6   |
+
+### InceptionV3
+
+| Method  | Pub.     | Bac.C       | Bac.L       | Top-1/5 Loc | GT-Known | Top-1/5 Cls |
+|:------- |:--------:|:-----------:|:-----------:|:-----------:|:--------:|:-----------:|
+| CREAM   | 2022CVPR | InceptionV3 | -           | 56.1/66.2   | 69.0     | -/-         |
+| SLT-Net | 2021CVPR | InceptionV3 | InceptionV3 | 55.7/65.4   | 67.6     | 78.1/-      |
+| PSOL    | 2020CVPR | InceptionV3 | InceptionV3 | 54.8/63.3   | 65.2     | -/-         |
+| I2C     | 2020ECCV | InceptionV3 | -           | 53.1/64.1   | 68.5     | 73.3/91.6   |
+| GC-Net  | 2020ECCV | InceptionV3 | InceptionV3 | 49.1/58.1   | -        | 77.4/93.6   |
+| MEIL    | 2020CVPR | InceptionV3 | -           | 49.5/-      | -        | 73.3/-      |
+| ADL     | 2019CVPR | InceptionV3 | -           | 48.7/-      | -        | 72.8/-      |
+| SPG     | 2018ECCV | InceptionV3 | -           | 48.6/60.0   | 64.7     |             |
+| CAM     | 2016CVPR | InceptionV3 | -           | 46.3/58.2   | 62.7     | 73.3/91.8   |
+
+### Others
+| Method  | Pub.     | Bac.C         | Bac.L | Top-1/5 Loc | GT-Known | Top-1/5 Cls |
+|:------- |:--------:|:-------------:|:-----:|:-----------:|:--------:|:-----------:|
+|         |          | **ResNet50**  |       |             |          |             |
+| DA-WSOL | 2022CVPR | ResNet50      | -     | 54.9/-      | 70.2     | -/-         |
+| CutMix  | 2019ICCV | ResNet50      | -     | 47.25/-     | -        | 78.6/94.1   |
+|         |          | **GoogleNet** |       |             |          |             |
+| CAM     | 2016CVPR | GoogleNet     | -     | 41.1/50.7   | -        | 73.8/91.5   |
+
+
+
 
 # 3. Dataset
 
