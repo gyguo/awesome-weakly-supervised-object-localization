@@ -26,7 +26,7 @@
 - [3. Dataset](#3-dataset)
   * [CUB-200-2011](#cub-200-2011)
   * [ImageNet](#imagenet)
-
+- [4. Awesome-list of Weakly-supervised Learning from Our Team](#4-awesome-list-of-weakly-supervised-learning-from-our-team)
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ------
@@ -42,9 +42,8 @@
 
 - ***2024CVPR*** CAM Back Again: Large Kernel CNNs from a Weakly Supervised Object Localization Perspective
 - ***2024TPAMI*** Boosting Weakly Supervised Object Localization and Segmentation With Domain Adaption
-- ***2024CVPR*** 
-
-
+- ***2024PR*** Discovering an inference recipe for weakly-supervised object localization
+- ***2024TNNLS*** Adaptive Zone Learning for Weakly Supervised Object Localization
 
 ## 2023
 - ***2023TPAMI*** Evaluation for Weakly Supervised Object Localization: Protocol, Metrics, and Datasets
@@ -61,6 +60,7 @@
 - **AlignMix:** ***2022CVPR*** AlignMix: Improving representation by interpolating aligned features
 - **ViTOL:** ***2022CVPRW*** ViTOL: Vision Transformer for Weakly Supervised Object Localization
 - ***2022TNNLS*** Diverse Complementary Part Mining for Weakly Supervised Object Localization
+- ***2022TNNLS*** Generalized Weakly Supervised Object Localization
 - ***2022PR*** Gradient-based refined class activation map for weakly supervised object localization
 - ***2022TMM*** Dual-Gradients Localization Framework With Skip-Layer Connections for Weakly Supervised Object Localization
 - ***2022ICMR*** FreqCAM: Frequent Class Activation Map for Weakly Supervised Object Localization
@@ -244,6 +244,7 @@
 ```
 
 ---
-# 4. Related 
-
-
+# 4. Awesome-list of Weakly-supervised Learning from Our Team
+[Awesome Weakly-supervised Semantic Segmentation](https://github.com/gyguo/awesome-weakly-supervised-semantic-segmentation)
+[Awesome Weakly-supervised Action Localization](https://github.com/VividLe/awesome-weakly-supervised-action-localization)
+[Awesome Weakly-supervised Object Localization](https://github.com/gyguo/awesome-weakly-supervised-object-localization)
