@@ -27,7 +27,6 @@
   * [CUB-200-2011](#cub-200-2011)
   * [ImageNet](#imagenet)
 - [4. Awesome-list of Weakly-supervised Learning from Our Team](#4-awesome-list-of-weakly-supervised-learning-from-our-team)
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ------
 
