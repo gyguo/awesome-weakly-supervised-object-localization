@@ -4,15 +4,6 @@
 
 # Table of Contents
 - [1. Paper List](#1-paper-list)
-  * [2024](#2024)
-  * [2023](#2023)
-  * [2022](#2022)
-  * [2021](#2021)
-  * [2020](#2020)
-  * [2019](#2019)
-  * [2018](#2018)
-  * [2017](#2017)
-  * [2016](#2016)
 - [2. Performance](#2-performance)
   * [2.1. Top1/5 results on CUB-200-2011](#21-results-on-cub-200-2011)
     + [Transformer](#transformer)
@@ -39,7 +30,7 @@
 
 # 1. Paper List
 ## 2024
-
+- ***2024IJCAI*** A Consistency and Integration Model with Adaptive Thresholds for Weakly Supervised Object Localization
 - ***2024CVPR*** CAM Back Again: Large Kernel CNNs from a Weakly Supervised Object Localization Perspective
 - ***2024TPAMI*** Boosting Weakly Supervised Object Localization and Segmentation With Domain Adaption
 - ***2024PR*** Discovering an inference recipe for weakly-supervised object localization
