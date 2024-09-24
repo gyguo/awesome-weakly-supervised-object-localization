@@ -35,6 +35,8 @@
 - ***2024TPAMI*** Boosting Weakly Supervised Object Localization and Segmentation With Domain Adaption
 - ***2024PR*** Discovering an inference recipe for weakly-supervised object localization
 - ***2024TNNLS*** Adaptive Zone Learning for Weakly Supervised Object Localization
+- ***2024PR*** Semantic-Constraint Matching for transformer-based weakly supervised object localization
+
 
 ## 2023
 - ***2023TPAMI*** Evaluation for Weakly Supervised Object Localization: Protocol, Metrics, and Datasets
