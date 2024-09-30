@@ -30,6 +30,7 @@
 
 # 1. Paper List
 ## 2024
+- ***2024ECCV*** Pro2SAM: Mask Prompt to SAM with Grid Points for Weakly Supervised Object Localization
 - ***2024IJCAI*** A Consistency and Integration Model with Adaptive Thresholds for Weakly Supervised Object Localization
 - ***2024CVPR*** CAM Back Again: Large Kernel CNNs from a Weakly Supervised Object Localization Perspective
 - ***2024TPAMI*** Boosting Weakly Supervised Object Localization and Segmentation With Domain Adaption
