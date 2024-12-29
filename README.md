@@ -37,6 +37,8 @@
 - ***2024PR*** Discovering an inference recipe for weakly-supervised object localization
 - ***2024TNNLS*** Adaptive Zone Learning for Weakly Supervised Object Localization
 - ***2024PR*** Semantic-Constraint Matching for transformer-based weakly supervised object localization
+- ***2024TMM*** Token Masking Transformer for Weakly Supervised Object Localization
+
 
 
 ## 2023
