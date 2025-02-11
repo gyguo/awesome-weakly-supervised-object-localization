@@ -29,6 +29,11 @@
 
 
 # 1. Paper List
+## 2025 
+- ***2024Arxiv*** TeD-Loc: Text Distillation for Weakly Supervised Object Localization
+- ***2024Arxiv*** A Realistic Protocol for Evaluation of Weakly Supervised Object Localization
+
+
 ## 2024
 - ***2024ECCV*** Pro2SAM: Mask Prompt to SAM with Grid Points for Weakly Supervised Object Localization
 - ***2024IJCAI*** A Consistency and Integration Model with Adaptive Thresholds for Weakly Supervised Object Localization
@@ -38,8 +43,6 @@
 - ***2024TNNLS*** Adaptive Zone Learning for Weakly Supervised Object Localization
 - ***2024PR*** Semantic-Constraint Matching for transformer-based weakly supervised object localization
 - ***2024TMM*** Token Masking Transformer for Weakly Supervised Object Localization
-
-
 
 ## 2023
 - ***2023TPAMI*** Evaluation for Weakly Supervised Object Localization: Protocol, Metrics, and Datasets
