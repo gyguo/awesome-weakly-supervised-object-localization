@@ -32,6 +32,7 @@
 ## 2025 
 - ***2025TPAMI*** CLIP-Driven Transformer for Weakly Supervised Object Localization
 - ***2025TNNLS*** Weakly Supervised Object Localization With Progressive Activation Diffusion
+- ***2025TIP*** Local Cross-Patch Activation From Multi-Direction for Weakly Supervised Object Localization
 - ***2024Arxiv*** TeD-Loc: Text Distillation for Weakly Supervised Object Localization
 - ***2024Arxiv*** A Realistic Protocol for Evaluation of Weakly Supervised Object Localization
 
