@@ -2,6 +2,12 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)![GitHub stars](https://img.shields.io/github/stars/gyguo/awesome-weakly-supervised-object-localization?color=yellow)  ![GitHub forks](https://img.shields.io/github/forks/gyguo/awesome-weakly-supervised-object-localization?color=green&label=Fork)
 
+------
+
+**<u>Contact gyguo95@gmail.com if any paper is missed!</u>**
+
+------
+
 # Table of Contents
 - [1. Paper List](#1-paper-list)
 - [2. Performance](#2-performance)
@@ -11,14 +17,6 @@
   * [CUB-200-2011](#cub-200-2011)
   * [ImageNet](#imagenet)
 - [4. Awesome-list of Weakly-supervised Learning from Our Team](#4-awesome-list-of-weakly-supervised-learning-from-our-team)
-
-------
-
-**<u>Contact gyguo95@gmail.com if any paper is missed!</u>**
-
-------
-
-
 
 # 1. Paper List
 ## 2025 
