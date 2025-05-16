@@ -39,8 +39,8 @@
 ## 2023
 - ***2023TPAMI*** Evaluation for Weakly Supervised Object Localization: Protocol, Metrics, and Datasets
 - ***2023ACM MM*** LocLoc: Low-level Cues and Local-area Guides for Weakly Supervised Object Localization
-- **WEND:** ***2023ACM MM*** Rethinking the Localization in Weakly Supervised Object Localization
-- **GenPromp:** ***2023ICCV*** Generative Prompt Model for Weakly Supervised Object Localization
+- ***2023ACM MM*** Rethinking the Localization in Weakly Supervised Object Localization
+- ***2023ICCV*** Generative Prompt Model for Weakly Supervised Object Localization
 - ***2023PR***  Weakly supervised foreground learning for weakly supervised localization and detection
 
 ## 2022
