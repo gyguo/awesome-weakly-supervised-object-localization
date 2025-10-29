@@ -20,6 +20,7 @@
 
 # 1. Paper List
 ## 2025 
+- ***2025ACM MM*** CSDN: CLIP-Driven Similarity-Aligned Distillation Network for Weakly-Supervised Object Localization
 - ***2025TPAMI*** CLIP-Driven Transformer for Weakly Supervised Object Localization
 - ***2025TNNLS*** Weakly Supervised Object Localization With Progressive Activation Diffusion
 - ***2025TIP*** Local Cross-Patch Activation From Multi-Direction for Weakly Supervised Object Localization
