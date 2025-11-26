@@ -25,8 +25,9 @@
 - ***2025TNNLS*** Weakly Supervised Object Localization With Progressive Activation Diffusion
 - ***2025TIP*** Local Cross-Patch Activation From Multi-Direction for Weakly Supervised Object Localization
 - ***2025PR***  Open-World Weakly-Supervised Object Localization
-- ***2024Arxiv*** TeD-Loc: Text Distillation for Weakly Supervised Object Localization
-- ***2024Arxiv*** A Realistic Protocol for Evaluation of Weakly Supervised Object Localization
+- ***2025ESWA*** Class-agnostic and semantic-aware fusing network with optimal transport for weakly supervised object localization
+- ***2025Arxiv*** TeD-Loc: Text Distillation for Weakly Supervised Object Localization
+- ***2025Arxiv*** A Realistic Protocol for Evaluation of Weakly Supervised Object Localization
 
 ## 2024
 - ***2024ECCV*** Pro2SAM: Mask Prompt to SAM with Grid Points for Weakly Supervised Object Localization
