@@ -19,6 +19,10 @@
 - [4. Awesome-list of Weakly-supervised Learning from Our Team](#4-awesome-list-of-weakly-supervised-learning-from-our-team)
 
 # 1. Paper List
+## 2026
+- ***2026Pattern Recognition*** Open-world weakly-supervised object localization
+- ***2026CVPR*** TriLite: Efficient Weakly Supervised Object Localization with Universal Visual Features and Tri-Region Disentanglement
+ 
 ## 2025 
 - ***2025ACM MM*** CSDN: CLIP-Driven Similarity-Aligned Distillation Network for Weakly-Supervised Object Localization
 - ***2025TPAMI*** CLIP-Driven Transformer for Weakly Supervised Object Localization
